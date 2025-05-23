@@ -52,6 +52,52 @@ body { font-family:Arial, sans-serif; color:#333; line-height:1.6; }
 .about-text { flex:1; }
 .about-image img { width:100%; border-radius:8px; }
 
+/* Testimonials */
+.testimonials { padding:4rem 0; text-align:center; }
+.testimonials .subhead { color:#777; margin-bottom:2rem; }
+
+.testi-nav {
+  display:inline-flex;
+  gap:1rem;
+  margin-bottom:2rem;
+}
+.testi-nav button {
+  padding:.75rem 1.5rem;
+  border:none;
+  background:#9aa5b1;
+  color:#fff;
+  cursor:pointer;
+  border-radius:4px;
+  opacity:.7;
+  transition:opacity .2s;
+}
+.testi-nav button.active,
+.testi-nav button:hover {
+  background:#2d77c4;
+  opacity:1;
+}
+
+.testi-panels { position:relative; min-height:250px; }
+.testi-item {
+  display:none;
+  max-width:600px;
+  margin:0 auto;
+}
+.testi-item.active {
+  display:block;
+}
+.testi-item img {
+  width:80px;
+  border-radius:50%;
+  margin-bottom:1rem;
+}
+.testi-item p {
+  font-size:1rem;
+  line-height:1.5;
+  color:#555;
+}
+
+
 /* CONTACT */
 .contact { background:#f4f4f4; padding:4rem 0; }
 .contact-form { max-width:600px; margin:0 auto; }
